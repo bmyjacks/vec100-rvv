@@ -6,14 +6,13 @@ domain.** The original and third-party portions have different terms.
 
 ## Benchmark-authored contributions
 
-To the extent that the benchmark contributors own the relevant rights, they
-dedicate their original contributions—including test harnesses, build scripts,
-hand-written RVV variants, and original portions of extraction glue and
+The benchmark contributors dedicate the rights they own in their original
+contributions—including test harnesses, build scripts, hand-written RVV
+variants, and original portions of extraction glue and
 documentation—under [CC0 1.0 Universal](LICENSES/CC0-1.0.txt). CC0 includes a
 license fallback where the public-domain waiver is ineffective. It **does not**
 relicense upstream-derived code, including upstream material incorporated into
-files that also contain benchmark-authored changes. Copyright holders can only
-dedicate rights they own; confirm authorization from all benchmark contributors.
+files that also contain benchmark-authored changes.
 
 ## Upstream-derived material
 
@@ -81,5 +80,3 @@ Distribute this file, `LICENSES/`, and the kernel source/header notices together
 Do not describe the entire artifact as CC0. The repository does not include
 compiled kernel binaries; distributing compiled tests or other combinations
 may entail additional obligations under the applicable upstream licenses.
-Check that benchmark contributors have consented to CC0 for their own portions
-and review licensing of any additional material before publishing an archive.
