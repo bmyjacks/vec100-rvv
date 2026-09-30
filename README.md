@@ -1,4 +1,4 @@
-# Compiler auto-vectorization benchmark
+# VEC100-RVV
 
 For redistribution and the licenses of the extracted kernels, see [LICENSE.md](LICENSE.md).
 
