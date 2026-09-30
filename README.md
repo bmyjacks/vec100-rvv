@@ -3,7 +3,7 @@
 For redistribution and the licenses of the extracted kernels, see [LICENSE.md](LICENSE.md).
 
 Results use `-O3` for RISC-V `rv64gcv` (LLVM 23.1.1 and GCC 16.1.0).
-**Ordinary** uses the default vectorization settings; **aggressive** adds
+**Default** uses the default vectorization settings; **aggressive** adds
 `#pragma clang loop vectorize(enable)` to eligible loops for LLVM or
 `-fvect-cost-model=unlimited` for GCC. See [BENCH.md](BENCH.md) for how
 vectorization is measured.
@@ -17,7 +17,7 @@ helper rather than the intended hot loop.
 hand-written RVV approach through auto-vectorization, not a performance score.
 **L / S** denotes loads / stores; **—** denotes no tagged RVV extension.
 
-| Compiler | Ordinary | Aggressive |
+| Compiler | Default | Aggressive |
 |---|---:|---:|
 | LLVM | 54/100 | 57/100 |
 | GCC | 47/100 | 73/100 |
