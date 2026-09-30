@@ -240,7 +240,7 @@ These are measured outcomes rather than source tags; see [BENCH.md](BENCH.md).
 | `LOOP` | A successful loop-vectorizer report, with emitted RVV instructions. |
 | `SLP` | A successful superword-level parallelism (SLP) vectorizer report, with emitted RVV instructions. SLP groups similar scalar operations and need not require a loop. |
 | `LOOP+SLP` | Both kinds of successful vectorizer report, with emitted RVV instructions. |
-| `No` | The vectorization criterion was not met. |
+| `No` (Not vectorized) | The vectorization criterion was not met. |
 
 Positive results may come from a helper rather than the intended hot loop.
 **Default** uses the compiler's default vectorization settings; **aggressive**
