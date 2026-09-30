@@ -9,7 +9,7 @@ Results use `-O3` for RISC-V `rv64gcv` (LLVM 23.1.1 and GCC 16.1.0).
 vectorization is measured.
 
 In the per-kernel table, **LOOP** means a successful loop-vectorizer report,
-**SLP** a successful SLP-vectorizer report, **LOOP+SLP** both, and **No** that
+**SLP** a successful SLP-vectorizer report, **LOOP+SLP** both, and **No** (Not vectorized) that
 the vectorization criterion was not met. A positive result also requires
 emitted RVV instructions in the compiled scalar source; it may come from a
 helper rather than the intended hot loop.
