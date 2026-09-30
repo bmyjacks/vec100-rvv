@@ -35,7 +35,7 @@ A kernel counts as **vectorized** when the build's report records a successful
 loop-vectorizer or SLP transformation and `build/assembly.s` contains RVV
 instructions. Missing or stale build reports are errors, not negative results.
 `loop` includes loop-only and loop+SLP kernels; `SLP-only` excludes kernels
-also vectorized by the loop vectorizer. `no` means this criterion was not met;
+also vectorized by the loop vectorizer. `no` (not vectorized) means this criterion was not met;
 `error` (including missing or stale assembly) is excluded from the denominator.
 The CSV records the compiler version, pass-site counts, RVV instruction counts,
 and any errors.
