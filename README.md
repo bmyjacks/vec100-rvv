@@ -59,7 +59,7 @@ kernels in that group, counting LOOP, SLP, and LOOP+SLP as vectorized.
 
 ### Vectorization by dependence class
 
-| Dependence class | Kernels | LLVM | GCC | LLVM aggressive | GCC aggressive |
+| Data dependence class | Kernels | LLVM | GCC | LLVM aggressive | GCC aggressive |
 |---|---:|---:|---:|---:|---:|
 | known_distance | 2 | 1/2 | 1/2 | 1/2 | 1/2 |
 | none | 26 | 7/26 | 11/26 | 9/26 | 20/26 |
@@ -69,7 +69,7 @@ kernels in that group, counting LOOP, SLP, and LOOP+SLP as vectorized.
 | runtime_dependent | 5 | 3/5 | 3/5 | 3/5 | 4/5 |
 | **Total** | **100** | **54/100** | **47/100** | **57/100** | **73/100** |
 
-| Kernel | Difficulty | Application domain | Dependence class | Computation | Memory access (L / S) | Control flow | Data types | Operation classes | Loop (depth / level / trip count) | RVV extensions | LLVM | GCC | LLVM aggressive | GCC aggressive |
+| Kernel | Difficulty | Application domain | Data dependence class | Computation | Memory access (L / S) | Control flow | Data types | Operation classes | Loop (depth / level / trip count) | RVV extensions | LLVM | GCC | LLVM aggressive | GCC aggressive |
 |---|:---:|---|---|---|---|---|---|---|---|---|:---:|:---:|:---:|:---:|
 | `00__xdg_mime_magic_matchlet_compare_to_data` | 0 | system_library | none | search | L: contiguous, broadcast<br>S: none | nested_control (early exit) | u8 | comparison, bitwise | 2 / innermost / runtime_invariant | — | No | No | No | No |
 | `01_apply_deltas_to_points` | 2 | font_rendering | recurrence | map (search) | L: segmented, indexed<br>S: segmented, scatter | early_exit | f32, u8 | floating_point_arithmetic, comparison, min_max, division | 3 / innermost / data_dependent | — | LOOP | LOOP | LOOP | LOOP |
