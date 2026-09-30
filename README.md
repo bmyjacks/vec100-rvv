@@ -17,6 +17,9 @@ helper rather than the intended hot loop.
 hand-written RVV approach through auto-vectorization, not a performance score.
 **L / S** denotes loads / stores; **—** denotes no tagged RVV extension.
 
+See [ANNOTATIONS.md](ANNOTATIONS.md) for the possible annotation values and
+their meanings.
+
 | Compiler | Default | Aggressive |
 |---|---:|---:|
 | LLVM | 54/100 | 57/100 |
