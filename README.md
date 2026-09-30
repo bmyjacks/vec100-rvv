@@ -57,7 +57,7 @@ kernels in that group, counting LOOP, SLP, and LOOP+SLP as vectorized.
 | unicode | 4 | 1/4 | 2/4 | 1/4 | 4/4 |
 | **Total** | **100** | **54/100** | **47/100** | **57/100** | **73/100** |
 
-### Vectorization by dependence class
+### Vectorization by data dependence class
 
 | Data dependence class | Kernels | LLVM | GCC | LLVM aggressive | GCC aggressive |
 |---|---:|---:|---:|---:|---:|
